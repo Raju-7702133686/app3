@@ -1,0 +1,21 @@
+label{
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+button{
+    position: relative;
+    left: 200px;
+}
+input{
+    outline: 0;
+}
+h1{
+    color: aqua;
+}
+button:hover{
+    background-color: navajowhite;
+}
+

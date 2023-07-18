@@ -1,0 +1,28 @@
+<div class="row" *ngFor="let detail of details" >
+    <div class="col-lg-4 col-mid-4 col-sm-6 col-12 ">
+        <h1>Personal Details</h1>
+        <p>Name : <span>{{detail.name}}</span></p>
+        <p>UserId : {{detail.username}}</p>
+        <p>Email : {{detail.email}}</p>
+        <p>Phone : {{detail.phone}}</p>
+        <p>Website : {{detail.website}}</p>
+
+    </div>
+
+    <div class="col-lg-4 col-mid-4 col-sm-6 col-12 ">
+        <h1>Address Details</h1>
+        <p>Street : {{detail.address.street}}</p>
+        <p>Suite : {{detail.address.suite}}</p>
+        <p>City : {{detail.address.city}}</p>
+        <p>zipcode : {{detail.address.zipcode}}</p>
+        <p>Geo : {{detail.address.geo.lat}}</p>
+
+    </div>
+    <div class="col-lg-4 col-mid-4 col-sm-6 col-12 ">
+        <h1>Company Details</h1>
+        <p>Name : {{detail.company.name}}</p>
+        <p>CatchPhrase : {{detail.company.catchPhrase}}</p>
+        <p>Bs : {{detail.company.name}}</p>
+
+    </div>
+</div>

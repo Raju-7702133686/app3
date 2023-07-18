@@ -1,0 +1,14 @@
+h1{
+    color: blueviolet;
+}
+p{
+    font-weight: 500;
+    // color: blue;
+}
+.row:nth-child(odd){
+    background-color: skyblue;
+}
+.row:nth-child(even){
+    background-color: yellow;
+}
+

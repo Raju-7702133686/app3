@@ -1,0 +1,49 @@
+<input type="text" [(ngModel)]="term" (keyup)="getfilterstudents()">
+
+<label>limit</label>
+<select [(ngModel)]="limit">
+    <option>20</option>
+    <option>10</option>
+</select>
+<label>page</label>
+<select [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+</select>
+<button (click)="getpaginationtudents()">sort</button>
+
+
+<label>column</label>
+<select [(ngModel)]="column">
+    <option>city</option>
+    <option>Name</option>
+</select>
+<label>order</label>
+<select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="getsortedstudents()">pagination</button>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Fee</th>
+            <th>Id</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.phone}}</td>
+            <td>{{student.city}}</td>
+            <td>{{student.fee}}</td>
+            <td>{{student.id}}</td>
+            <td><button (click)="deletestudents(student.id)" class="btn btn-danger">delete</button></td>
+        </tr>
+    </tbody>
+</table>

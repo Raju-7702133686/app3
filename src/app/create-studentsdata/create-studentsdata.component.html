@@ -1,0 +1,16 @@
+<h1>create student Data</h1>
+<form [formGroup]="studentsForm">
+    <label>Name</label>
+    <input type="text" FormControlName="name" >
+    <br>
+    <label>Phone</label>
+    <input type="text" FormControlName="phone">
+    <br>
+    <label>City</label>
+    <input type="text" FormControlName="city">
+    <br>
+    <label>Fee</label>
+    <input type="text" FormControlName="fee">
+    <br>
+    <button class="btn btn-primary" (click)="submit()">Submit</button>
+</form>

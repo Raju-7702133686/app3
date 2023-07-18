@@ -1,0 +1,9 @@
+<div *ngFor="let message of messages" class="parent">
+<div class="userId" [ngStyle]="{color: message.completed==true?'gray' : 'black'}">
+<h3>userId : {{message.userId}}</h3>
+<h3>id : {{message.id}}</h3>
+<h3>title :{{message.title}}</h3>
+<h3>completed : {{message.completed}}</h3>
+</div>
+</div>
+

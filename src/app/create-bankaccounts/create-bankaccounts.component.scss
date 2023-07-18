@@ -1,0 +1,18 @@
+label{
+    width: 200px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+button{
+    position: relative;
+    left: 250px;
+    
+}
+input{
+    outline-color: skyblue;
+    
+}
+label::after{
+    content: "*";
+    color: red;
+}
