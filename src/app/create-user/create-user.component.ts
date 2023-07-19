@@ -12,7 +12,7 @@ export class CreateUserComponent {
     name: new FormControl(),
     age: new FormControl(),
     phone: new FormControl(),
-    email:new FormControl(),
+    email: new FormControl(),
     address: new FormGroup({
       hno: new FormControl(),
       state: new FormControl(),
@@ -24,12 +24,12 @@ export class CreateUserComponent {
     cards: new FormArray([])
   });
 
-  get cardsFormArray(){
+  get cardsFormArray() {
     return this.userForm.get('cards') as FormArray;
 
   }
 
-  addcard(){
+  addcard() {
     this.cardsFormArray.push(
       new FormGroup({
         no: new FormControl(),
@@ -40,7 +40,11 @@ export class CreateUserComponent {
     )
   }
 
-  submit(){
+  deletecard(i: number) {
+    this.cardsFormArray.removeAt(i);
+  }
+
+  submit() {
     console.log(this.userForm);
   }
 
