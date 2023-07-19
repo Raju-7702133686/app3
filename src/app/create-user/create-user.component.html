@@ -16,7 +16,7 @@
 
     <div formGroupName="address">
         <label>HNO</label>
-        <input type="number" formControlName="hno">
+        <input type="text" formControlName="hno">
         <br>
         <label>State</label>
         <input type="text" formControlName="state">
@@ -26,5 +26,24 @@
         <br>
 
     </div>
+
+    <label for="a">Type:</label>
+    <input name="raju" type="radio" id="a" formControlName="type" value="dayscholor">
+    <label>Dayscholor</label>
+    <input name="raju" type="radio" formControlName="type" value="residential">
+    <label>Residential</label>
+    <br>
+
+    <div *ngIf="userForm.get('type')?.value == 'dayscholor'">
+        <label>Bus Fee:</label>
+        <input type="number" formControlName="busfee">
+        <br>
+    </div>
+
+    <div *ngIf="userForm.get('type')?.value=='residential'">
+        <label>Hostel Fee:</label>
+        <input type="number" formControlName="hostelfee">
+    </div>
+
     <button class="btn btn-primary" (click)="submit()">Submit</button>
 </form>
