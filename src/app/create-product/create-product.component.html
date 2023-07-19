@@ -12,5 +12,19 @@
     <input type="text" formControlName="color">
     <br>
 
+    <div formGroupName="features" >
+        <label>Ram</label>
+        <input type="text" formControlName="ram">
+        <br>
+
+        <label>battery</label>
+        <input type="text" formControlName="battery">
+        <br>
+
+        <label>processor</label>
+        <input type="text" formControlName="processor">
+        <br>
+    </div>
+
     <button class="btn btn-primary" (click)="submit()">Submit</button>
 </form>
