@@ -1,0 +1,18 @@
+label{
+    width: 150px;
+}
+button{
+    position: relative;
+    left: 200px;
+
+}
+input{
+    margin-bottom: 10px;
+    outline-color: blueviolet;
+    border: 0px;
+    height: 30px;
+}
+label::after{
+    content: "*";
+    color: red;
+}

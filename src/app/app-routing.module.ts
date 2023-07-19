@@ -32,6 +32,7 @@ import { CreateBankaccountsComponent } from './create-bankaccounts/create-bankac
 // import { StudentsComponent } from './studentssdata/studentsdata.component';
 import { CreateStudentsdataComponent } from './create-studentsdata/create-studentsdata.component';
 import { authenticationGuard } from './authentication.guard';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -63,7 +64,9 @@ const routes: Routes = [
     {path:'mail1',component:Mail1Component},
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'create-bankaccounts',component:CreateBankaccountsComponent},
-    {path:'create-studentsdata',component:CreateStudentsdataComponent}
+    {path:'create-studentsdata',component:CreateStudentsdataComponent},
+    {path:'create-user',component:CreateUserComponent}
+
 
   ]},
 

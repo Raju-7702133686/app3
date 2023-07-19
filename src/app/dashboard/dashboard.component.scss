@@ -19,6 +19,9 @@
     background-color: rgb(74, 135, 159);
     padding: 10px;
     overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     color: white;

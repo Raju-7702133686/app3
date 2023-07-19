@@ -36,6 +36,7 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateBankaccountsComponent } from './create-bankaccounts/create-bankaccounts.component';
 // import { StudentsComponent } from './students/students.component';
 import { CreateStudentsdataComponent } from './create-studentsdata/create-studentsdata.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { CreateStudentsdataComponent } from './create-studentsdata/create-studen
     Mail1Component,
     CreateVehicleComponent,
     CreateBankaccountsComponent,
-    CreateStudentsdataComponent
+    CreateStudentsdataComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
