@@ -1,18 +1,22 @@
 label{
-    width: 150px;
+    width: 100px;
 }
 button{
     position: relative;
-    left: 200px;
+    left: 150px;
 
 }
 input{
     margin-bottom: 10px;
-    outline-color: blueviolet;
+    outline-color: rgb(24,119,242);
     border: 0px;
     height: 30px;
+    border-radius: 5px;
 }
 label::after{
     content: "*";
     color: red;
+}
+h1{
+    color: aquamarine;
 }

@@ -1,17 +1,30 @@
-
-    <h1>Create user Form</h1>
+<h1>Create user Form</h1><br>
 <form [formGroup]="userForm">
     <label>Name</label>
     <input type="text" formControlName="name">
     <br>
     <label>Age</label>
-    <input type="text" formControlName="age">
+    <input type="number" formControlName="age">
     <br>
     <label>Phone</label>
-    <input type="text" formControlName="phone">
+    <input type="number" formControlName="phone">
     <br>
     <label>Email</label>
-    <input type="text" formControlName="email">
+    <input type="email" formControlName="email">
     <br>
+
+
+    <div formGroupName="address">
+        <label>HNO</label>
+        <input type="number" formControlName="hno">
+        <br>
+        <label>State</label>
+        <input type="text" formControlName="state">
+        <br>
+        <label>Pin</label>
+        <input type="number" formControlName="pin">
+        <br>
+
+    </div>
     <button class="btn btn-primary" (click)="submit()">Submit</button>
 </form>
