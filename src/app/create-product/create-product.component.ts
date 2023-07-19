@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-product',
@@ -16,8 +16,30 @@ export class CreateProductComponent {
       ram: new FormControl(),
       battery: new FormControl(),
       processor: new FormControl()
-    })
+    }),
+    comments: new FormArray([])
   });
+
+  get commentsFormArray() {
+    return this.productForm.get('comments') as FormArray;
+
+  }
+
+  addcomments(){
+    this.commentsFormArray.push(
+      new FormGroup({
+        name: new FormControl(),
+        time: new FormControl(),
+        message: new FormControl()
+      })
+    )
+  }
+
+  deletecard(i:number){
+    this.commentsFormArray.removeAt(i);
+  }
+
+
 
   submit(){
     console.log(this.productForm);

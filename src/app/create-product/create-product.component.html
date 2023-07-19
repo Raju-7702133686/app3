@@ -26,5 +26,31 @@
         <br>
     </div>
 
+    <button (click)="addcomments()" class="btn btn-secondary">Add comments</button><br><br>
+
+    <div formArrcommentme="comments">
+        <div *ngFor="let comment of commentsFormArray.controls; let i=index">
+            <div formGroupName="{{i}}">
+                <h1>comments</h1>
+                
+                <label>Name</label>
+                <input type="text" formControlName="name">
+                <br>
+
+                <label>time</label>
+                <input type="text" formControlName="time">
+                <br>
+
+                <label>message</label>
+                <input type="text" formControlName="message">
+                <br>
+
+                <button class="btn btn-danger" (click)="deletecard(i)">Delete</button><br><br>
+
+
+            </div>
+        </div>
+    </div>
+
     <button class="btn btn-primary" (click)="submit()">Submit</button>
 </form>
