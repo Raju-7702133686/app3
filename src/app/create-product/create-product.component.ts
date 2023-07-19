@@ -17,6 +17,9 @@ export class CreateProductComponent {
       battery: new FormControl(),
       processor: new FormControl()
     }),
+    payment: new FormControl(),
+    upiaddress: new FormControl(),
+    netbanking: new FormControl(),
     comments: new FormArray([])
   });
 

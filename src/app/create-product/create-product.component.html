@@ -12,7 +12,7 @@
     <input type="text" formControlName="color">
     <br>
 
-    <div formGroupName="features" >
+    <div formGroupName="features">
         <label>Ram</label>
         <input type="text" formControlName="ram">
         <br>
@@ -26,26 +26,48 @@
         <br>
     </div>
 
+    <div>
+        <label>Payment</label>
+        <input type="radio" name="raju" formControlName="payment" value="upiaddress">
+        <label>UPI address</label>
+        <input type="radio" name="raju" formControlName="payment" value="netbanking">
+        <label>Net banking</label>
+        <br>
+
+        <div *ngIf="productForm.get('payment')?.value=='upiaddress'">
+            <label for="">UPI</label>
+            <input type="text" formControlName="upiaddress">
+            <br>
+
+        </div>
+
+        <div *ngIf="productForm.get('payment')?.value=='netbanking'">
+            <label for="">Net banking</label>
+            <input type="text" formControlName="netbanking">
+            <br>
+        </div>
+    </div>
+
     <button (click)="addcomments()" class="btn btn-secondary">Add comments</button><br><br>
 
     <div formArrcommentme="comments">
         <div *ngFor="let comment of commentsFormArray.controls; let i=index">
             <div formGroupName="{{i}}">
-                <h1>comments</h1>
-                
+                <h1>comment{{i+1}} </h1>
+
                 <label>Name</label>
                 <input type="text" formControlName="name">
                 <br>
 
                 <label>time</label>
-                <input type="text" formControlName="time">
+                <input type="datetime-local" formControlName="time">
                 <br>
 
                 <label>message</label>
                 <input type="text" formControlName="message">
                 <br>
 
-                <button class="btn btn-danger" (click)="deletecard(i)">Delete</button><br><br>
+                <button class="btn btn-danger" (click)="deletecard(i)">Delete comment</button><br><br>
 
 
             </div>
