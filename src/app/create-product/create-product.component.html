@@ -27,8 +27,8 @@
     </div>
 
     <div>
-        <label>Payment</label>
-        <input type="radio" name="raju" formControlName="payment" value="upiaddress">
+        <label for="a">Payment</label>
+        <input id="a" type="radio" name="raju" formControlName="payment" value="upiaddress">
         <label>UPI address</label>
         <input type="radio" name="raju" formControlName="payment" value="netbanking">
         <label>Net banking</label>
@@ -51,7 +51,8 @@
     <button (click)="addcomments()" class="btn btn-secondary">Add comments</button><br><br>
 
     <div formArrcommentme="comments">
-        <div *ngFor="let comment of commentsFormArray.controls; let i=index">
+        <div *ngFor="let comment of commentsFormArray.controls; let i=index" class="array"
+        >
             <div formGroupName="{{i}}">
                 <h1>comment{{i+1}} </h1>
 
@@ -64,8 +65,7 @@
                 <br>
 
                 <label>message</label>
-                <input type="text" formControlName="message">
-                <br>
+                <textarea name="" id="" cols="30" rows="5" formControlName="message"></textarea> <br>
 
                 <button class="btn btn-danger" (click)="deletecard(i)">Delete comment</button><br><br>
 

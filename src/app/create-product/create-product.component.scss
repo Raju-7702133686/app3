@@ -6,7 +6,7 @@ input{
     padding: 5px;
     margin-bottom: 10px;
     border: 5px;
-    border: 0px;
+    border-radius: 5px;
     outline-color: aliceblue;
 }
 button{
@@ -16,4 +16,9 @@ button{
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: blueviolet;
+}
+textarea{
+    position: relative;
+    // left: 50px;
+    border-radius: 5px;
 }

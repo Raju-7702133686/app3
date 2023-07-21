@@ -34,6 +34,7 @@ import { CreateStudentsdataComponent } from './create-studentsdata/create-studen
 import { authenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductComponent } from './create-product/create-product.component';
+import { CreateExampleComponent } from './create-example/create-example.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -67,7 +68,8 @@ const routes: Routes = [
     {path:'create-bankaccounts',component:CreateBankaccountsComponent},
     {path:'create-studentsdata',component:CreateStudentsdataComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'create-product',component:CreateProductComponent}
+    {path:'create-product',component:CreateProductComponent},
+    {path:'create-example',component:CreateExampleComponent}
 
 
   ]},

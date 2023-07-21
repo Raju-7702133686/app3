@@ -1,0 +1,71 @@
+<h1>Create Employee Details</h1>
+
+<form [formGroup]="exampleForm">
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <br>
+
+    <label>Age</label>
+    <input type="number" formControlName="age">
+    <br>
+
+    <label>Date of birth</label>
+    <input type="date" formControlName="dob">
+    <br>
+
+    <label>Email</label>
+    <input type="email" formControlName="email">
+    <br>
+
+    <label>Name</label>
+    <input type="text" formControlName="phone">
+    <br>
+
+
+    <div formGroupName="address">
+        <label>hno</label>
+        <input type="number" formControlName="hno">
+        <br>
+
+        <label>state</label>
+        <input type="text" formControlName="state">
+        <br>
+
+        <label>pin</label>
+        <input type="number" formControlName="pin">
+        <br>
+    </div>
+
+    <label>Type</label>
+    <input type="radio" name="raju" formControlName="type" value="dayscholor">
+    <label>Dayscholor</label>
+    <input type="radio" name="raju" formControlName="type" value="residential">
+    <label>Residential</label>
+
+    <div *ngIf="exampleForm.get('type')?.value=='dayscholor'">
+        <label>Bus fee</label>
+        <input type="number" formControlName="busfee">
+        <br>
+    </div>
+
+    <div *ngIf="exampleForm.get('type')?.value=='residential'">
+        <label>Hostel fee</label>
+        <input type="number" formControlName="hostelfee">
+        <br>
+    </div>
+
+    <br><br>
+
+    <button (click)="addcard()">addcard</button>
+
+    <div formArrayName="cards">
+        <div *ngFor="let card of cardsFormArray.controls; let i=index">
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="submit()">Submit</button>
+
+</form>
