@@ -36,6 +36,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { CreateExampleComponent } from './create-example/create-example.component';
 import { notifyGuard } from './notify.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -66,11 +67,13 @@ const routes: Routes = [
     {path:'flipcart1',component:Flipcart1Component},
     {path:'mail1',component:Mail1Component},
     {path:'create-vehicle',component:CreateVehicleComponent,canDeactivate:[notifyGuard]},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent,canDeactivate:[notifyGuard]},
     {path:'create-bankaccounts',component:CreateBankaccountsComponent,canDeactivate:[notifyGuard]},
     {path:'create-studentsdata',component:CreateStudentsdataComponent,canDeactivate:[notifyGuard]},
     {path:'create-user',component:CreateUserComponent,canDeactivate:[notifyGuard]},
     {path:'create-product',component:CreateProductComponent,canDeactivate:[notifyGuard]},
-    {path:'create-example',component:CreateExampleComponent,canDeactivate:[notifyGuard]}
+    {path:'create-example',component:CreateExampleComponent,canDeactivate:[notifyGuard]},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent}
 
 
   ]},

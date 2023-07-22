@@ -39,6 +39,7 @@ import { CreateStudentsdataComponent } from './create-studentsdata/create-studen
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { CreateExampleComponent } from './create-example/create-example.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { CreateExampleComponent } from './create-example/create-example.componen
     CreateStudentsdataComponent,
     CreateUserComponent,
     CreateProductComponent,
-    CreateExampleComponent
+    CreateExampleComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,
