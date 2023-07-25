@@ -37,6 +37,7 @@ import { CreateProductComponent } from './create-product/create-product.componen
 import { CreateExampleComponent } from './create-example/create-example.component';
 import { notifyGuard } from './notify.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -50,7 +51,7 @@ const routes: Routes = [
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangular',component:RectangularComponent},
     {path:'bmi',component:BmiComponent},
-    
+
     {path:'attributes-directives',component:AttributesDirectivesComponent},
     {path:'table',component:TableComponent},
     {path:'structoraldirectories',component:StructuraldirectoriesComponent},
@@ -74,7 +75,8 @@ const routes: Routes = [
     {path:'create-user',component:CreateUserComponent,canDeactivate:[notifyGuard]},
     {path:'create-product',component:CreateProductComponent,canDeactivate:[notifyGuard]},
     {path:'create-example',component:CreateExampleComponent,canDeactivate:[notifyGuard]},
-    {path:'vehicle-details/:id',component:VehicleDetailsComponent}
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'products',component:ProductsComponent}
 
 
   ]},

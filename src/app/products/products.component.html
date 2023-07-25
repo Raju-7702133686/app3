@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+           
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.price | price}}</td>
+            <td>{{product.rating}}</td>
+            
+            
+        </tr>
+        <tr>
+
+        </tr>
+
+    </tbody>
+</table>
