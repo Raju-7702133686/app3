@@ -41,7 +41,7 @@
     <thead>
         <tr>
             <th>account_name</th>
-            <th>available_balance</th>
+            <th>available_balance </th>
             <th>account_number</th>
             <th>city</th>
             <th>profie_picture</th>
@@ -53,13 +53,13 @@
     <tbody>
         <tr *ngFor="let bankaccount of bankaccounts">
             <td>{{ bankaccount.account_name }}</td>
-            <td>{{ bankaccount.available_balance }}</td>
+            <td>{{ bankaccount.available_balance |price }}</td>
             <td>{{ bankaccount.account_number }}</td>
             <td>{{ bankaccount.city }}</td>
             <td>
                 <img src="{{ bankaccount.profie_picture }}" alt="" height="50px" width="50px">
             </td>
-            <td>{{ bankaccount.id }}</td>
+            <td>{{ bankaccount.id | age }}</td>
             <td><button (click)="deleteaccounts(bankaccount.id)" class="btn btn-danger">delete</button></td>
         </tr>
     </tbody>

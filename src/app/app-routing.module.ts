@@ -50,6 +50,7 @@ const routes: Routes = [
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangular',component:RectangularComponent},
     {path:'bmi',component:BmiComponent},
+    
     {path:'attributes-directives',component:AttributesDirectivesComponent},
     {path:'table',component:TableComponent},
     {path:'structoraldirectories',component:StructuraldirectoriesComponent},
