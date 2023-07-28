@@ -99,7 +99,13 @@ const routes: Routes = [
     {path:'nav1',component:Nav1Component},
     {path:'cart1',component:Cart1Component},
     {path:'about-company',component:AboutCompanyComponent},
-    {path:'about-ceo',component:AboutCeoComponent}
+    {path:'about-ceo',component:AboutCeoComponent},
+  
+    {
+      path: 'contact',
+      loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+    }
+  
 
 
 
