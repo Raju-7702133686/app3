@@ -38,6 +38,18 @@ import { CreateExampleComponent } from './create-example/create-example.componen
 import { notifyGuard } from './notify.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ProductsComponent } from './products/products.component';
+import { ParentComponent } from './parent/parent.component';
+import { Parent1Component } from './parent1/parent1.component';
+import { CalComponent } from './cal/cal.component';
+import { ItemComponent } from './item/item.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { Item1Component } from './item1/item1.component';
+import { Nav1Component } from './nav1/nav1.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { AboutCompanyComponent } from './about/about-company/about-company.component';
+import { AboutCeoComponent } from './about/about-ceo/about-ceo.component';
+
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -76,7 +88,19 @@ const routes: Routes = [
     {path:'create-product',component:CreateProductComponent,canDeactivate:[notifyGuard]},
     {path:'create-example',component:CreateExampleComponent,canDeactivate:[notifyGuard]},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path:'products',component:ProductsComponent}
+    {path:'products',component:ProductsComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'parent1',component:Parent1Component},
+    {path:'cal',component:CalComponent},
+    {path:'item',component:ItemComponent},
+    {path:'nav',component:NavComponent},
+    {path:'cart',component:CartComponent},
+    {path:'item1',component:Item1Component},
+    {path:'nav1',component:Nav1Component},
+    {path:'cart1',component:Cart1Component},
+    {path:'about-company',component:AboutCompanyComponent},
+    {path:'about-ceo',component:AboutCeoComponent}
+
 
 
   ]},

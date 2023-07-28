@@ -44,6 +44,19 @@ import { PricePipe } from './price.pipe';
 import { AgePipe } from './age.pipe';
 import { ImpDirective } from './imp.directive';
 import { ProductsComponent } from './products/products.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Parent1Component } from './parent1/parent1.component';
+import { Child1Component } from './child1/child1.component';
+import { CalComponent } from './cal/cal.component';
+import { Cal1Component } from './cal1/cal1.component';
+import { ItemComponent } from './item/item.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { Item1Component } from './item1/item1.component';
+import { Nav1Component } from './nav1/nav1.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -85,14 +98,27 @@ import { ProductsComponent } from './products/products.component';
     PricePipe,
     AgePipe,
     ImpDirective,
-    ProductsComponent
+    ProductsComponent,
+    ParentComponent,
+    ChildComponent,
+    Parent1Component,
+    Child1Component,
+    CalComponent,
+    Cal1Component,
+    ItemComponent,
+    NavComponent,
+    CartComponent,
+    Item1Component,
+    Nav1Component,
+    Cart1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+<p>parent1 works!</p>
+<input type="number" [(ngModel)]="aparent">
+<input type="number" [(ngModel)]="bparent">
+
+<h1>bp : {{bp}} </h1>
+<app-child1 [ac]="aparent" [bc]="bparent" (bEvent)="catch($event)"></app-child1>

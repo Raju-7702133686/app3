@@ -47,6 +47,7 @@
 
         <span *ngIf="userForm.get('email')?.errors?.['required']">This field is required</span>
         <span *ngIf="userForm.get('email')?.errors?.['email']">Invalid email</span>
+        <span *ngIf="userForm.get('email')?.errors?.['domainvalidator']"> only capgemini mail accepted </span>
 
     </span>
     
@@ -64,6 +65,8 @@
             <span *ngIf="userForm.get('address')?.get('state')?.errors?.['required']">This field is required</span>
             <span *ngIf="userForm.get('address')?.get('state')?.errors?.['minlength']">mini 3 characters required</span>
             <span *ngIf="userForm.get('address')?.get('state')?.errors?.['maxlength']">max 50 characters only </span>
+            <span *ngIf="userForm.get('address')?.get('state')?.errors?.['statevalidator']">only ts and ap accepted </span>
+
     
         </span>
         

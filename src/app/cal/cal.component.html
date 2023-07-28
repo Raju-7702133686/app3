@@ -1,0 +1,15 @@
+<div>
+    <div class="child">
+        <h1>Calculator</h1><br>
+
+        <label>Number1 : </label>
+        <input type="number" [(ngModel)]="ap">
+        <br>
+        <label for="">Number2 : </label>
+        <input type="number" [(ngModel)]="bp">
+        <h1>Result is : {{cp}}</h1>
+       
+
+        <app-cal1 [ac]="ap" [bc]="bp" (bEvent)="catch($event)"></app-cal1>
+    </div>
+</div>

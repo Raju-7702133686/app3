@@ -1,0 +1,13 @@
+{
+    "name":"abc",
+    "age":"number",
+    "isindian":true,
+    "phone":[9993828,32382938],
+    "address":{
+        "hno":"1-2-32",
+        "pin":"1-2-32"
+    },
+    "cards":[
+        {}
+    ]
+}
